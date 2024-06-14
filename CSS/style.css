@@ -1,0 +1,330 @@
+/* common css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.center-item{
+    align-items: center;
+}
+/* common css end */
+
+/* common parts start */
+.btn{
+    background-color: #cfc91d;
+    font-size: 14px;
+    font-weight: 800;
+    color: #0b1016;
+    padding: 15px 40px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: none;
+    cursor: pointer;
+}
+.headline{
+    font-size: 46px;
+    font-weight: 800;
+    color: #02918c;
+    text-transform: uppercase;
+}
+.headline p{
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e8287;
+}
+.card i{
+    color: #02918c;
+    font-size: 30px;
+}
+.card h5{
+    color: #7e8287;
+    font-size: 16px;
+    font-weight: 800;
+    margin: 20px 0;
+    
+}
+.card p{
+    color: #7e8287;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+/* common parts end */
+
+/* NAV START */
+nav{
+    background-color: #02918b;
+}
+
+nav .logo{
+    width: 30%;
+}
+
+nav .menu{
+    width: 70%;
+    text-align: right;
+}
+
+nav .menu ul li{
+    display: inline-block;
+    position: relative;
+}
+nav .menu ul li a{
+    text-transform: uppercase;
+    padding: 26px 25px;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 800;
+}
+/* DROPDOWN START */
+nav .menu ul li a:hover{
+    color: #CFC91D;
+}    
+nav ul li .dropdown{
+    position: absolute;
+    background-color: #CFC91D;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+nav .dropdown li a:hover{
+    background-color: #02918B;
+    color: #FFFFFF;
+}
+nav ul li:hover .dropdown{
+    opacity: 1;
+    visibility: visible;
+    color: black;
+}
+nav ul li .dropdown a{
+    color: black;
+    padding: 10px 12px;
+    text-align: left;
+    display: block;
+    border-bottom:0.5px solid #ffffff;
+}
+nav ul li .dropdown li{
+    display: block;
+
+}
+/* DROPDOWN END */
+/* NAV END */
+
+/* BANNER START */
+#banner{
+    background-image: url(../img/banner.jpg);
+    height: 728px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #ffffff;
+}
+#banner .banner_items{
+    width: 100%;
+}
+#banner .row{
+    height: 100%;
+}
+#banner .banner_items h5{
+    font-size: 30px;
+    font-weight: 400;
+}
+#banner .banner_items h1{
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+}
+#banner .banner_items p{
+    font-size: 18px;
+    font-weight: 400;
+}
+#banner .banner_items img{
+    margin: 50px 0;
+}
+/* BANNER END */
+
+/* ABOUT ME START */
+/* 1st */
+#aboutme{
+    padding: 98px 0;
+    text-align: center;
+}
+.title p{
+    padding-top: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e8287;
+    line-height: 28px;
+}
+.title p span{
+    font-size: 23px;
+    font-weight: 800;
+    color: #7e8287;
+}
+/* 2nd */
+#aboutme .about-card{
+    padding-top: 80px;
+
+}
+#aboutme .about-card .card{
+    width: 25%;
+    border-right: 0.5px solid #7e8287;
+    padding: 36px 0;
+}
+#aboutme .about-card .card:last-child{
+    border: none;
+}
+/* ABOUT ME END */
+
+/* Services Start */
+/* part 1 */
+#services{
+    background-image: url(../img/serives\ bg.jpg);
+    height: 728px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#services{
+    padding: 72px 0;
+}
+.title p{
+    padding-top: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e8287;
+    line-height: 28px;
+}
+/* part 2 */
+#services .service-card{
+    padding: 50px 0;
+    width: 570px;
+}
+
+#services .service-card .card{
+    width: 50%;
+    padding-bottom: 50px;
+}
+/* Services End */
+
+/* My Work Start */
+/* part 1 */
+#mywork{
+    padding: 108px 0 82px 0;
+    text-align: center;
+}
+.title p{
+    padding-top: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e8287;
+    line-height: 28px;
+}
+/* part 2 */
+#mywork-card .work-card{
+    width: 25%;
+    position: relative;
+}
+#mywork-card .work-card img{
+    width: 100%;
+    display: block;
+}
+#mywork-card .work-card .overlay{
+    background-color: rgba(28, 140, 133, 0.85);
+    position: absolute;
+    inset: 20px 28px;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 60px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.50s;
+    transform: scale(0.95) translateY(20px); 
+}
+#mywork-card .work-card:hover .overlay{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1) translateY(0);
+}
+#mywork-card .overlay h5{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 800; 
+}
+#mywork-card .overlay p{
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 20px;
+}
+/* My Work End */
+
+/* Contact Me Start */
+#contactme{
+    padding: 100px 0 70px 0;
+    text-align: center;
+}
+
+/* form */
+#form{
+    background-color: #0b0b0b;
+    padding: 65px 0;
+    text-align: center;
+}
+#form .contact-form{
+    width: 634px;
+    margin: 34px auto;
+}
+#form .contact-form:nth-child(1){
+    margin-top: 0;
+}
+#form .contact-form:nth-child(3),
+#form .contact-form:nth-child(4){
+    width: 918px;
+}
+
+#form .contact-form input{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    outline: none;
+    color: #ffffff;
+}
+/* footer */
+#ending .copyright{
+    background-color: #000000;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff;
+    padding: 30px;
+}
+
+/* Contact Me End */
+
+/* SOIKAT DEV */
